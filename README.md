@@ -11,7 +11,7 @@ The steps below will create a Docker container running OVS 2.4.0, with both
 the ovsschema, and the hardwarevtep schema.
 
 
-Build and ovs 2.4 docker image
+Build an OVS 2.4.0 docker image
 ------------------------------
 
 	git clone https://github.com/vpickard/docker-ovs.git
