@@ -1,9 +1,9 @@
 This is a fork from great work done by Dave Tucker. Thanks Dave!
-================================================================
+----------------------------------------------------------------
 https://github.com/dave-tucker/docker-ovs
 
 docker-ovs
-==========
+----------
 
 docker-ovs creates [Open vSwitch](http://openvswitch.org) containers for Docker.
 
@@ -11,8 +11,8 @@ The steps below will create a Docker container running OVS 2.4.0, with both
 the ovsschema, and the hardwarevtep schema.
 
 
-Steps to build and start ovs 2.4 docker image with both ovsschema and hardwarevtep schema
-=========================================================================================
+Build and start ovs 2.4 docker image with both ovsschema and hardwarevtep schema
+------------------------------------------------------------------------------------------
 
 git clone https://github.com/vpickard/docker-ovs.git
 
@@ -44,7 +44,7 @@ docker exec $cid supervisorctl start ovs-vtep
 docker exec $cid vtep-ctl set-manager ptcp:6640
 
 Some useful commands
-=====================
+--------------------
 docker exec $cid vtep-ctl get-manager
 
 docker exec $cid ovsdb-client dump unix:/usr/local/var/run/openvswitch/db.sock hardware_vtep
